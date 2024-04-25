@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger</title>
+    <link rel="icon" href="ledger.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.5/c">
+    </head>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+     tbody:nth-child(even) {
+    background-color:#FFFFFF;}                   
+
+    tr:nth-child(even) {
+    background-color:#FFFFFF;}  
+    
+    .date,.date1,.show{
+            display: inline-block;
+        }
+        
+        .date{
+            padding-left:30px;
+            padding-right:10px;
+        }
+
+        .led{
+            margin-left: 2.5%;
+           padding-top: 20px;
+        }
+
+        .show{
+        padding-left: 850px;
+        
+        }
+
+        .box{
+            width: 95%;
+            margin-left: 2.5%;
+            height: 125px;
+            border:2px solid gray;
+            margin-top: 40px;
+            box-shadow:15px 20px 20px rgba(0,0,0,.1),
+    inset 4px 4px 10px white; 
+        }
+        .one{
+            margin-top: 50px;
+            padding-left:800px;
+
+        }
+        .btn,.two,.three{
+            border-radius: 5px;
+        }
+        .btn{
+            border:2px solid black;
+        }
+    
+        .btn:focus{
+            background:#05ADEA;
+            color:white;
+        }
+        .two:focus{
+            background:#05ADEA;    
+            color:white;              
+
+        }
+        .three:focus{
+            background:#05ADEA;   
+            color:white;               
+
+        }
+    
+    
+    
+    
+        
+        
+
+</style>
+  <body>
+    <h2 class="led" style="font-weight: 900;color:#05ADEA">Ledger</h2>
+    <div class="box">
+        <div class="date">
+            <p style="font-weight: 900;" >Date</p>
+            <input type="date">
+            </div>
+        
+            <div class="date1">
+                <p   style="font-weight: 900;"> To Date</p>
+                <input type="date" >
+            </div>
+            <div class="show">
+                <button class="btn" style="font-weight: bold;">Show Results</button>
+            </div>
+        
+           
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div>
+                        
+    <div class="one">
+        <button class="two"style="font-weight: bold;" >Save PDF</button>  <button class="three" style="font-weight: bold;">Print Report</button>
+    </div>
+</div>
+   
+      <div class="p-5">
+    <table id="example" class="table table-striped" style="width:100%">
+           
+             <thead>
+             <tr>                    
+                <th colspan="2" style="font-weight: 900;">Account Details</th>
+                    <th colspan="2" style="font-weight: 900;">Total Expenditure</th>
+                    <th colspan="2" style="font-weight: 900;">Period Balance</th>
+                    <th colspan="2" style="font-weight: 900;">Total amount</th>
+                </tr>
+                <tr>
+                    <th style="font-weight: 900;color:#05ADEA">Account no</th>
+                    <th style="font-weight: 900;color:#05ADEA">Status</th>
+                    <th style="font-weight: 900;color:#05ADEA">Debit</th>
+                    <th style="font-weight: 900;color:#05ADEA">Credit</th>
+                    <th style="font-weight: 900;color:#05ADEA">Debit</th>
+                    <th style="font-weight: 900;color:#05ADEA">Credit</th>
+                    <th style="font-weight: 900;color:#05ADEA">Dedit</th>
+                    <th style="font-weight: 900;color:#05ADEA">Credit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th style="font-weight: 900;">Asset </th>
+                </tr>
+                <tr>
+                    <th style="color:#05ADEA;">1112</th>
+                    <td>Credit Balance </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> 900000</td>
+                    <td> - </td>
+                    <td> 900000</td>
+                    <td> - </td>
+            
+                </tr>
+
+                <tr>
+                    <th  style="color:#05ADEA;">11345</th>
+                    <td>Cash in hand </td>
+                    <td> 25000 </td>
+                    <td> - </td>
+                    <td> 222000</td>
+                    <td> 9000</td>
+                    <td> 238000</td>
+                    <td> - </td>
+            
+                </tr>
+                <tr>
+                    <th  style="color:#05ADEA;">14566</th>
+                    <td>Check in advance </td>
+                    <td> 870000 </td>
+                    <td> - </td>
+                    <td> 9000</td>
+                    <td> 9000 </td>
+                    <td> 870000</td>
+                    <td> - </td>
+            
+                </tr>
+                <tr>
+                    <th style="font-weight: 900;">Debit</th>
+                   
+                </tr>
+                <tr>
+                    <th  style="color:#05ADEA;">4567</th>
+                    <td>Reserve money </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td>- </td>
+                    <td> 50000 </td>
+                    <td> -</td>
+                    <td> 50000 </td>
+            
+                </tr>
+
+                <tr>
+                    <th  style="color:#05ADEA;">6587</th>
+                    <td>Other Creditors </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> -</td>
+                    <td> 790000 </td>
+                    <td> -</td>
+                    <td> 790000 </td>
+            
+                </tr>
+
+                <tr>
+                    <th style="font-weight: 900;">Capital</th>
+
+                               
+            
+                </tr>
+
+                <tr>
+                    <th  style="color:#05ADEA;">34998</th>
+                    <td>Accumulated Profit(loss) </td>
+                    <td> - </td>
+                    <td> 895000 </td>
+                    <td> -</td>
+                    <td> - </td>
+                    <td> -</td>
+                    <td> 895000 </td>
+            
+                </tr>
+                <tr>
+                    <th style="font-weight: 900;">Income</th>
+                
+            
+                </tr>
+                <tr>
+                    <th  style="color:#05ADEA;">43487</th>
+                    <td>Service Income </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> -</td>
+                    <td> 222000 </td>
+                    <td> -</td>
+                    <td> 222000</td>
+            
+                </tr>
+
+                <tr>
+                    <th style="font-weight: 900;">Expenses</th>
+            
+                </tr>
+
+                <tr>
+                    <th  style="color:#05ADEA;">87687</th>
+                    <td>Transportation expenses/Accomodation etc </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> 50000</td>
+                    <td> - </td>
+                    <td> 50000</td>
+                    <td> - </td>
+            
+                </tr>
+                <tr>
+                    <th  style="color:#05ADEA;">8964</th>
+                    <td>Advertising and other marketing expenses </td>
+                    <td> - </td>
+                    <td> - </td>
+                    <td> 79000</td>
+                    <td> - </td>
+                    <td> 79000</td>
+                    <td> - </td>
+            
+                </tr>
+                <tr>
+                    <th></th>
+                    <td style="font-weight: 900;">Net Total </td>
+                    <td style="font-weight: 900;"> 895000 </td>
+                    <td style="font-weight: 900;"> 895000</td>
+                    <td style="font-weight: 900;"> 1260000</td>
+                    <td style="font-weight: 900;"> 369000</td>
+                    <td style="font-weight: 900;"> 2137000</td>
+                    <td style="font-weight: 900;"> 1957000 </td>
+            
+                </tr>
+                
+            </tbody>
+            
+    </table>
+    </div> 
+
+</body>
+
+
+</html>
